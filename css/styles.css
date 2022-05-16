@@ -8,10 +8,18 @@
 
 body {
   overflow-x: hidden;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#e9ff00), color-stop(#e8bb05), color-stop(#ca7e27), color-stop(#984e30), color-stop(#5a2b29), color-stop(#3d1f21), color-stop(#221416), color-stop(#000000), color-stop(#000000), color-stop(#000000), color-stop(#000000), to(#000000));
+  background-image: linear-gradient(to right top, #e9ff00, #e8bb05, #ca7e27, #984e30, #5a2b29, #3d1f21, #221416, #000000, #000000, #000000, #000000, #000000);
 }
 
 html {
+  overflow-x: hidden;
+  margin: 0;
   font-size: 100%;
+}
+
+header {
+  background-color: black;
 }
 
 a {
@@ -20,13 +28,11 @@ a {
 }
 
 .parallax {
-  background-image: url("/assets/img/Parallax fondo.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 30px;
-  margin-bottom: 50px;
 }
 
 .parallax h4 {
@@ -97,6 +103,11 @@ nav {
       justify-self: center;
 }
 
+form {
+  background-color: white;
+  /*AJUSTAR CON BOOTSTRAP*/
+}
+
 fieldset {
   width: 40%;
   margin-left: 10%;
@@ -106,7 +117,19 @@ fieldset p {
   font-size: 1rem;
 }
 
+P {
+  color: #F2EDA2;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 /*----Texto----*/
+.textblock {
+  padding: 0;
+  height: 10px;
+  width: 10000px;
+  display: inline;
+}
+
 p {
   font-size: 2rem;
   padding: 0;
@@ -115,26 +138,17 @@ p {
   display: inline-block;
 }
 
-p .BlockText {
-  padding: 0;
-  height: 10px;
-  width: 10000px;
-  display: inline;
-}
-
-p
 .bigtext h4 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 4.5rem;
   font-weight: bold;
   font-style: solid;
-  color: gold;
+  color: white;
 }
 
-p
 .bigtext h2 {
   color: gold;
-  border: #0f0e08;
+  border: white;
   border: 100px;
 }
 
@@ -154,7 +168,6 @@ h4 span {
 .estiloLista li {
   display: inline;
   padding: 10px;
-  margin: 5px;
 }
 
 ul {
@@ -181,7 +194,7 @@ ul ul li {
 }
 
 ul ul a {
-  color: white;
+  color: #F2EDA2;
 }
 
 ul ul :hover ul {

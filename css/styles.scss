@@ -7,11 +7,19 @@
 
 body {
   overflow-x: hidden;
+  background-image: linear-gradient(to right top, #e9ff00, #e8bb05, #ca7e27, #984e30, #5a2b29, #3d1f21, #221416, #000000, #000000, #000000, #000000, #000000);
 }
 
 html {
+  overflow-x: hidden;
+  margin: 0;
   font-size: 100%;
 }
+
+header {
+  background-color:black;
+}
+
 
 a {
   text-decoration: none;
@@ -19,7 +27,7 @@ a {
 }
 
 .parallax {
-  background-image: url("/assets/img/Parallax\ fondo.png");
+
 
   background-attachment: fixed;
 
@@ -30,7 +38,7 @@ a {
   background-size: cover;
 
   padding: 50px 30px;
-  margin-bottom: 50px;
+
   h4 {
   font-size: 4rem;
   text-align: left;
@@ -88,7 +96,10 @@ nav {
   /* use margin por que  no me andaba el align-content de #galery*/
   justify-self: center;
 }
-
+form{
+  background-color: white;
+  /*AJUSTAR CON BOOTSTRAP*/
+}
 fieldset {
   width: 40%;
   margin-left: 10%;
@@ -97,35 +108,37 @@ fieldset {
   }
 }
 
+P{
+  color: #F2EDA2;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 /*----Texto----*/
 
-p {
+.textblock {
+  padding: 0;
+  height: 10px;
+  width: 10000px;
+  display: inline;  
+  }p {
   font-size: 2rem;
   padding: 0;
   height: 100px;
   width: 1000px;
   display: inline-block;
-  .BlockText {
-    padding: 0;
-    height: 10px;
-    width: 10000px;
-    display: inline;
-  }
 }
 
-p 
 .bigtext {
   h4 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 4.5rem;
     font-weight: bold;
     font-style: solid;
-    color: gold;
+    color:white
   }
   h2 {
     color: gold;
-    border: #0f0e08;
+    border: white;
     border: 100px;
   }
 }
@@ -143,7 +156,7 @@ h4 span {
   li {
     display: inline;
     padding: 10px;
-    margin: 5px;
+
   }
 }
 
@@ -170,7 +183,7 @@ ul ul {
     padding: 10px;
   }
  a {
-    color: white;
+    color: #F2EDA2;
   }
  :hover ul {
     position: absolute;
